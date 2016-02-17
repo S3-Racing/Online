@@ -1,12 +1,63 @@
-
+//set min width/height for mobile
+html {
+  height: 100%;
+  width: 100%;
+  min-height: 600px;
+  min-width: 768px;
+}
 
 body {
-  padding-top: 50px;
+  margin: 0;
+    overflow-x:hidden;
+  padding-top: 90px;
+  background-image: url("black_paper.png");
+  background-repeat:repeat;
 }
 
 .transparent {
   opacity: 0.25 !important;
 }
+
+//robo font
+.robofont
+{
+  font-family: 'Roboto Slab', serif;
+}
+
+//make a pretty page appearance shadow effect using css
+.shadow
+{
+}
+.shadow:before, .effect8:after
+{
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 15px rgba(0,0,0,0.2);
+    -moz-box-shadow:0 0 15px rgba(0,0,0,0.4);
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+    top:0px;
+    bottom:10px;
+    left:0px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+} 
+.shadow:after
+{
+	right:10px; 
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg); 
+       -moz-transform:skew(8deg) rotate(3deg);     
+        -ms-transform:skew(8deg) rotate(3deg);     
+         -o-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
+}
+
+  .uppercase
+  {
+    text-transform: uppercase;
+  }
 
 .spinneron {
   position: absolute;
@@ -20,7 +71,6 @@ body {
 }
 
 .spinner {
-  margin: 100px auto;
   width: 50px;
   height: 30px;
   text-align: center;
